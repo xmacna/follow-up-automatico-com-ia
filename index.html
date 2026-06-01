@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Follow-up automatico com IA | Template XMACNA</title>
+  <meta name="description" content="Template de follow-up automatico com IA para vendas B2B, WhatsApp, qualificacao de leads e Funcionarios Digitais com IA.">
+  <link rel="canonical" href="https://xmacna.github.io/follow-up-automatico-com-ia/">
+  <meta property="og:title" content="Follow-up automatico com IA">
+  <meta property="og:description" content="Cadencia inteligente para agente de IA no WhatsApp: contexto, proximo passo, handoff humano e registro no Painel Inteligente.">
+  <meta property="og:url" content="https://xmacna.github.io/follow-up-automatico-com-ia/">
+  <meta property="og:type" content="article">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Follow-up automatico com IA",
+    "description": "Template operacional para criar cadencias de follow-up com agente de IA.",
+    "datePublished": "2026-06-01",
+    "dateModified": "2026-06-01",
+    "author": {
+      "@type": "Organization",
+      "name": "XMACNA",
+      "url": "https://xmacna.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "XMACNA",
+      "url": "https://xmacna.ai"
+    },
+    "mainEntityOfPage": "https://xmacna.github.io/follow-up-automatico-com-ia/"
+  }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #151515;
+      --muted: #61676f;
+      --line: #d8dee5;
+      --soft: #f7f8fa;
+      --accent: #7a3d00;
+      --accent-strong: #572b00;
+      --blue: #0f5fb8;
+      --ok: #0b7a4b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.55;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    nav {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    nav .links { display: flex; gap: 14px; flex-wrap: wrap; font-size: 14px; }
+    .hero {
+      padding: 62px 0 38px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(180deg, #fffaf3 0%, #fff 82%);
+    }
+    .kicker {
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0;
+      color: var(--accent-strong);
+    }
+    h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(36px, 6vw, 66px);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+    .lead {
+      max-width: 780px;
+      margin: 20px 0 0;
+      color: var(--muted);
+      font-size: 19px;
+    }
+    .notice {
+      max-width: 820px;
+      margin-top: 20px;
+      border: 1px solid #f0d58c;
+      background: #fff9ea;
+      color: #4b3700;
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 28px;
+      padding: 36px 0;
+      align-items: start;
+    }
+    section { padding: 24px 0; }
+    h2 { font-size: 28px; margin: 0 0 14px; letter-spacing: 0; }
+    h3 { font-size: 18px; margin: 0 0 8px; letter-spacing: 0; }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      background: #fff;
+    }
+    .card p { margin: 6px 0 0; color: var(--muted); }
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+      padding: 18px;
+      position: sticky;
+      top: 84px;
+    }
+    .inputs { display: grid; gap: 12px; }
+    label { font-size: 14px; font-weight: 700; display: grid; gap: 6px; }
+    input, select {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0 10px;
+      font: inherit;
+      background: #fff;
+    }
+    .output {
+      margin-top: 16px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      color: var(--ink);
+      white-space: pre-wrap;
+      min-height: 132px;
+      font-size: 14px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      display: table;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px;
+      text-align: left;
+      font-size: 14px;
+      vertical-align: top;
+    }
+    th { background: var(--soft); }
+    tr:last-child td { border-bottom: 0; }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      border-radius: 8px;
+      padding: 0 16px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+    }
+    .btn:hover { color: #fff; background: var(--accent-strong); text-decoration: none; }
+    .btn.secondary {
+      background: #fff;
+      color: var(--accent-strong);
+      border: 1px solid var(--line);
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 22px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 880px) {
+      .grid, .cards { grid-template-columns: 1fr; }
+      .panel { position: static; }
+      table { display: block; overflow-x: auto; }
+      nav { align-items: flex-start; padding: 12px 0; }
+      .hero { padding-top: 42px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap" aria-label="Navegacao principal">
+      <strong>XMACNA</strong>
+      <div class="links">
+        <a href="https://xmacna.ai">Site</a>
+        <a href="https://xmacna.ai/sdr-com-ia">Agente de IA para WhatsApp</a>
+        <a href="https://xmacna.ai/ia-para-vendas-b2b">IA para vendas B2B</a>
+        <a href="https://xmacna.ai/diagnostico">Diagnostico</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <p class="kicker">Follow-up automatico com IA</p>
+        <h1>Follow-up bom lembra contexto. Follow-up ruim so insiste.</h1>
+        <p class="lead">Use agente de IA para retomar conversas com criterio: origem, dor, proximo passo, limite de cadencia e passagem para humano quando existir intencao real.</p>
+        <div class="notice">Nao use este template para spam, lista comprada ou disparo sem contexto. Cadencia inteligente respeita interesse, base adequada e pedido de pausa.</div>
+      </div>
+    </section>
+
+    <div class="wrap grid">
+      <div>
+        <section>
+          <h2>Cadencia sugerida</h2>
+          <table>
+            <thead>
+              <tr><th>Etapa</th><th>Objetivo</th><th>Quando passar para humano</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>D0</td><td>Acolher, recuperar contexto e propor o proximo passo.</td><td>Lead aceita reuniao, visita, diagnostico ou pede proposta.</td></tr>
+              <tr><td>D1</td><td>Retomar com valor e baixa friccao.</td><td>Lead responde com dor, urgencia ou pergunta comercial.</td></tr>
+              <tr><td>D3</td><td>Ajudar decisao com criterio pratico.</td><td>Lead compara solucoes ou pede recomendacao.</td></tr>
+              <tr><td>D7</td><td>Encerrar sem insistencia e manter porta aberta.</td><td>Lead pede retomada futura ou novo contato.</td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Campos que a IA precisa lembrar</h2>
+          <div class="cards">
+            <article class="card"><h3>Origem</h3><p>Canal, campanha, pagina, indicacao ou conversa anterior.</p></article>
+            <article class="card"><h3>Dor</h3><p>Problema, urgencia, consequencia e criterio de decisao.</p></article>
+            <article class="card"><h3>Etapa</h3><p>Momento da cadencia e ultima resposta do lead.</p></article>
+            <article class="card"><h3>Proximo passo</h3><p>Diagnostico, visita, reuniao, proposta ou handoff humano.</p></article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Como medir</h2>
+          <div class="cards">
+            <article class="card"><h3>Resposta por etapa</h3><p>Qual mensagem recupera conversa sem aumentar opt-out.</p></article>
+            <article class="card"><h3>Agendamento</h3><p>Quantos leads avancam para visita, reuniao ou diagnostico.</p></article>
+            <article class="card"><h3>Passagem humana</h3><p>Quando a IA deve entregar contexto para o vendedor.</p></article>
+            <article class="card"><h3>Pausa</h3><p>Pedidos de parada e motivos de encerramento da cadencia.</p></article>
+          </div>
+        </section>
+      </div>
+
+      <aside class="panel">
+        <h2>Gerador simples</h2>
+        <div class="inputs">
+          <label>Etapa
+            <select id="stage">
+              <option value="D0">D0 - resposta imediata</option>
+              <option value="D1">D1 - lembrete util</option>
+              <option value="D3">D3 - criterio de decisao</option>
+              <option value="D7">D7 - encerramento elegante</option>
+            </select>
+          </label>
+          <label>Nome
+            <input id="name" value="Ana">
+          </label>
+          <label>Tema
+            <input id="topic" value="IA para vendas B2B">
+          </label>
+          <label>Dor ou objetivo
+            <input id="pain" value="responder leads mais rapido">
+          </label>
+        </div>
+        <div class="output" id="output" aria-live="polite"></div>
+        <div class="cta">
+          <a class="btn" href="https://xmacna.ai/diagnostico">Fazer diagnostico</a>
+          <a class="btn secondary" href="https://xmacna.ai/sdr-com-ia">Ver agente de IA</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">XMACNA | Funcionarios Digitais com IA. Template educativo para cadencias com contexto e limite.</div>
+  </footer>
+
+  <script>
+    const stage = document.getElementById('stage');
+    const nameInput = document.getElementById('name');
+    const topic = document.getElementById('topic');
+    const pain = document.getElementById('pain');
+    const output = document.getElementById('output');
+
+    function clean(value, fallback) {
+      return String(value || '').trim() || fallback;
+    }
+
+    function render() {
+      const name = clean(nameInput.value, 'Ana');
+      const tema = clean(topic.value, 'IA para vendas B2B');
+      const dor = clean(pain.value, 'responder leads mais rapido');
+      const templates = {
+        D0: `Oi, ${name}. Vi que voce pediu informacoes sobre ${tema}. Para eu te ajudar melhor: o ponto principal agora e ${dor}, ou voce esta comparando caminhos?`,
+        D1: `${name}, passando para te deixar um caminho simples. Se o objetivo for ${dor}, o primeiro passo e entender volume, canal de entrada e criterio de qualificacao. Quer mapear isso comigo?`,
+        D3: `Um criterio pratico: se ${dor} esta afetando o funil, a IA deve entrar antes da proposta, na qualificacao e no registro do contexto. Faz sentido para o seu caso?`,
+        D7: `${name}, vou pausar por aqui para nao insistir sem necessidade. Se quiser retomar ${tema} depois, posso te ajudar a revisar onde um Funcionario Digital com IA faria mais sentido.`
+      };
+      output.textContent = templates[stage.value];
+    }
+
+    [stage, nameInput, topic, pain].forEach((input) => input.addEventListener('input', render));
+    render();
+  </script>
+</body>
+</html>
