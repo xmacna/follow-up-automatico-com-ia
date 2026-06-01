@@ -1,0 +1,63 @@
+{
+  "$schema": "https://xmacna.ai/schemas/follow-up-automatico-com-ia.schema.json",
+  "title": "Template de follow-up automatico com IA",
+  "brand": "XMACNA",
+  "positioning": "Funcionarios Digitais com IA",
+  "canonical": "https://xmacna.ai/follow-up-automatico-com-ia",
+  "last_reviewed": "2026-06-01",
+  "anti_spam_rules": [
+    "Usar apenas com origem, interesse ou base adequada.",
+    "Nao usar lista comprada.",
+    "Parar quando o lead pedir.",
+    "Limitar cadencia.",
+    "Registrar motivo de pausa ou encerramento."
+  ],
+  "stages": [
+    {
+      "id": "D0",
+      "name": "resposta_imediata",
+      "timing": "0 a 15 minutos",
+      "goal": "Acolher, recuperar contexto e conduzir para o proximo passo.",
+      "handoff_signal": "Lead aceita reuniao, visita, diagnostico ou pede proposta."
+    },
+    {
+      "id": "D1",
+      "name": "lembrete_util",
+      "timing": "1 dia",
+      "goal": "Retomar com valor e baixa friccao.",
+      "handoff_signal": "Lead responde com dor, urgencia ou pergunta comercial."
+    },
+    {
+      "id": "D3",
+      "name": "criterio_de_decisao",
+      "timing": "3 dias",
+      "goal": "Ajudar o lead a decidir com criterio pratico.",
+      "handoff_signal": "Lead compara solucoes ou pede recomendacao."
+    },
+    {
+      "id": "D7",
+      "name": "encerramento_elegante",
+      "timing": "7 dias",
+      "goal": "Fechar ciclo sem insistencia e manter porta aberta.",
+      "handoff_signal": "Lead pede retomada futura ou novo contato."
+    }
+  ],
+  "required_fields": [
+    "lead_origin",
+    "interest",
+    "main_pain",
+    "urgency",
+    "cadence_stage",
+    "last_response",
+    "next_step",
+    "pause_reason"
+  ],
+  "metrics": [
+    "response_rate_by_stage",
+    "scheduled_rate_by_stage",
+    "opt_out_rate",
+    "recovered_leads",
+    "created_opportunities",
+    "human_handoffs"
+  ]
+}
